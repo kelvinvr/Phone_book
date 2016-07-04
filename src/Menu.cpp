@@ -6,7 +6,9 @@
  */
 
 #include "Menu.h"
+#include "List.H"
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 Menu::Menu()
@@ -72,25 +74,33 @@ void Menu::routeAction(int option)
 void Menu::listContacts()
 {
 	//TODO: Implement this
-	cout << "Implement  Menu::listContacts" << endl;
+	cout << "List of Contacts" << endl;
+	List list ;
+	list.List();
 }
 
 void Menu::addContacts()
 {
 	//TODO: Implement this
-	cout << "Implement  Menu::addContacts" << endl;
+	cout << "Add a Contact" << endl;
+	  List list;
+	  list.add();
 }
 
 void Menu::removeContacts()
 {
 	//TODO: Implement this
-	cout << "Implement  Menu::removeContacts" << endl;
+	cout << "Remove Contacts" << endl;
+	List list;
+	list.remove();
 }
 
 void Menu::modifyContacts()
 {
 	//TODO: Implement this
-	cout << "Implement  Menu::modifyContacts" << endl;
+	cout << "Modify Contacts" << endl;
+	List list;
+	list.modify();
 }
 
 void Menu::show()
